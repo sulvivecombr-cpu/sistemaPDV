@@ -1,0 +1,45 @@
+[
+    {
+      "sku": "ABC-01",
+      "estoqueDisponivel": [
+        {
+          "armazem": "LOJA RAIZES",
+          "quantidade": 150
+        },
+        {
+          "armazem": "LOJA CENTER NORTE",
+          "quantidade": 75
+        }, 
+        {
+            "armazem": "LOJA CD",
+            "quantidade": 75
+          }
+      ]
+    },
+    {
+      "sku": "XYZ-02",
+      "estoqueDisponivel": [
+        {
+          "armazem": "LOJA RAIZES",
+          "quantidade": 300
+        },
+        {
+          "armazem": "LOJA CENTER NORTE",
+          "quantidade": 120
+        },
+        {
+            "armazem": "LOJA CD",
+          "quantidade": 50
+        }
+      ]
+    },
+    {
+      "sku": "EFG-03",
+      "estoqueDisponivel": [
+        {
+            "armazem": "LOJA CD",
+          "quantidade": 25
+        }
+      ]
+    }
+]

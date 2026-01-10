@@ -1,0 +1,39 @@
+.btn-custom {
+    background: #00B340;
+    color: #fff;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: 600;
+    z-index: 3;
+    min-width: 120px;
+    height: 40px;
+}
+.btn-custom:hover {
+    background:rgb(1, 138, 49);
+    color: #fff;
+}
+
+.btn-custom-orange {
+    background: #ff5716;
+    color: #fff;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: 600;
+    z-index: 3;
+    min-width: 120px;
+    height: 40px;
+}
+.btn-custom-orange:hover {
+    background:rgb(218, 75, 18);
+    color: #fff;
+}
+
+.price-color{
+    color: #00B340;
+    font-weight: 500;
+}
+
+.price-returned{
+    color: #dc3545;
+    font-weight: 500;
+}

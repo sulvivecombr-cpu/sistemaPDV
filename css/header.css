@@ -1,0 +1,172 @@
+.nav-link{
+    font-weight: 500;
+    color: #707070;
+}
+
+.navbar-custom {
+    background-color: #efefef !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    height: 73px;
+}
+.navbar-hamburger {
+    border-radius: 14px !important;
+    border: 1px solid #707070 !important;
+    background: #fff !important;
+    color: #333 !important;
+    width: 50px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.navbar-hamburger:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #bdbdbd;
+}
+.navbar-header-centralizado {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+.navbar-logo img {
+    height: 38px;
+    max-width: 120px;
+}
+.btn-iniciar-venda {
+    background: #00B340;
+    color: #fff;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: 600;
+    position: absolute;
+    left: calc(53% + 80px); /* 80px para dar espaço ao lado do logo (logo tem 60px + 20px de distância) */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    min-width: 120px;
+}
+.btn-iniciar-venda:hover {
+    background:rgb(1, 138, 49);
+    color: #fff;
+}
+.mini-relogio {
+    font-size: 0.80rem !important; /* Um pouco menor */
+    font-weight: 600;
+    color: #333;
+    background: none !important;
+    border: none !important;
+    border-radius: 0;
+    padding: 0 0.5rem;
+    margin-right: 1rem;
+    box-shadow: none !important;
+    display: flex;
+    align-items: center;
+    min-width: 50px;
+    justify-content: center;
+    letter-spacing: 1px;
+}
+.dropdown-user {
+    margin-right: 20px !important; /* Garantir pelo menos 20px da margem direita */
+    display: flex;
+    align-items: center;
+}
+.dropdown-user .btn {
+    border-radius: 20px;
+    border: 1px solid #707070;
+    background: #707070;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 10px !important; /* Diminuído de 0.95rem para 0.80rem */
+    padding: 0.35rem 1.2rem !important;
+    min-width: 120px;
+    max-width: 220px;
+    width: auto;
+    text-align: left;
+    white-space: nowrap;
+}
+.dropdown-user .btn:after {
+    margin-left: 0.5em;
+}
+.dropdown-menu-end {
+    min-width: 160px;
+    width: auto;
+    max-width: 260px;
+    font-size: 0.95rem;
+}
+/* ----------- MOBILE ----------- */
+@media (max-width: 991.98px) {
+    .navbar-header-centralizado {
+        flex-direction: column;
+        align-items: stretch;
+        min-height: 70px;
+    }
+    .navbar-logo {
+        position: static;
+        left: auto;
+        top: auto;
+        transform: none;
+        margin: 0 auto;
+        display: none; /* Esconde o logo no mobile */
+    }
+    .btn-iniciar-venda {
+        
+        left: 68%;
+        top: -38px;
+        transform: none;
+        margin: 0 auto;
+        display: block;
+    }
+    .mini-relogio,
+    .dropdown-user {
+        display: none !important; /* Esconde relógio e usuário do navbar no mobile */
+    }
+    .navbar-custom {
+        height: 60px;
+    }
+    .btn{
+        font-size: 11px;
+    }
+}
+/* Exibe logo no sidebar apenas no mobile */
+@media (max-width: 991.98px) {
+    #sidebar .sidebar-logo-mobile {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 0 0.5rem 0;
+    }
+
+}
+@media (min-width: 992px) {
+    #sidebar .sidebar-logo-mobile {
+        display: none !important;
+    }
+}
+.card {
+    border: none;
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+.table {
+    --bs-table-bg: white;
+}
+.table thead {
+    background-color: #f1f1f1;
+}
+.btn {
+    border-radius: 0.5rem;
+}

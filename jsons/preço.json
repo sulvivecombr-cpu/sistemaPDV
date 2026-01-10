@@ -1,0 +1,72 @@
+[
+    {
+      "sku": "ABC-01",
+      "nomeProduto": "Produto Exemplo com Impostos",
+      "tabelasDePreco": [
+        {
+          "idTabela": 101,
+          "nomeTabela": "Tabela Padrão - Varejo",
+          "valores": {
+            "precoUnitario": 99.90,
+            "precoPromocional": 79.90,
+            "impostos": [
+              {
+                "nomeImposto": "ICMS",
+                "percentual": 18.0
+              },
+              {
+                "nomeImposto": "PIS",
+                "percentual": 1.65
+              },
+              {
+                "nomeImposto": "COFINS",
+                "percentual": 7.6
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sku": "XYZ-02",
+      "nomeProduto": "Produto Teste",
+      "tabelasDePreco": [
+        {
+          "idTabela": 102,
+          "nomeTabela": "Tabela Atacado",
+          "valores": {
+            "precoUnitario": 55.00,
+            "precoPromocional": null,
+            "impostos": [
+              {
+                "nomeImposto": "ICMS",
+                "percentual": 12.0
+              },
+              {
+                "nomeImposto": "IPI",
+                "percentual": 5.0
+              }
+            ]
+          }
+        },
+        {
+          "idTabela": 103,
+          "nomeTabela": "Tabela de Promoção de Verão",
+          "valores": {
+            "precoUnitario": 55.00,
+            "precoPromocional": 45.00,
+            "impostos": [
+              {
+                "nomeImposto": "ICMS",
+                "percentual": 18.0
+              },
+              {
+                "nomeImposto": "PIS",
+                "percentual": 1.65
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]

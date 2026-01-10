@@ -1,0 +1,36 @@
+
+
+h4{
+    display: flex;
+    justify-content: center;
+    color: #707070;
+}
+
+.ticket_ind_cont{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    color: #707070;
+}
+
+.ticket_ind_cont h2{
+    color: #00B340;
+}
+
+
+.card_home {
+    border-radius: 40px;
+    
+}
+
+.card_home li{
+    color: #707070;
+    font-weight: 500;
+}
+
+.bg-custom{
+    background: #FF5716;
+
+}

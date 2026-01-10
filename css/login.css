@@ -1,0 +1,209 @@
+
+body{
+    /* Removido pointer-events: none; para permitir cliques nos elementos da página */
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/2v2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.91;
+    z-index: -1;
+    /* pointer-events: none;  <-- Removido */
+}
+
+.login-container {
+    max-width: 800px;
+    margin: auto;
+    padding-top: 80px;
+}
+
+
+.card {
+    border-radius: 1rem;
+    border: none;
+    border-radius: 0px 54px 54px 0px;
+}
+
+.logo-card {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 5px solid #f0f0f0;
+    border-radius: 54px 0px 0px 54px;
+}
+
+.logo-img {
+    margin-top: 30%;
+    width: 200px;
+    height: 73px;
+    object-fit: contain;
+}
+
+.frase-efeito {
+    font-size: 16px;
+    color: #495057;
+    text-align: center;
+}
+
+.dev-by {
+    font-size: 0.85rem;
+    color: #adb5bd;
+    text-align: center;
+    margin-top: auto;
+}
+
+.border {
+    border-radius: 54px;
+}
+
+.btn-custom-laranja {
+    background-color: #FF5716;
+    color: #fff;
+    border-radius: 54px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 60px;
+    width: 80%;
+}
+
+.btn-custom-laranja:hover{
+    background-color: #d04d1a;
+    color: #fff;
+}
+
+.d-grid {
+    display: grid !important;
+    justify-items: center;
+}
+
+/* Responsividade para telas pequenas (mobile) */
+@media (max-width: 576px) {
+    body {
+        background-size: 100vw 100vh;
+        background-attachment: fixed;
+        min-height: 100vh;
+        min-width: 100vw;
+    }
+}
+@media (max-width: 767.98px) {
+    .login-container {
+        max-width: 100%;
+        padding-top: 120px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .row.flex-lg-row {
+        flex-direction: column !important;
+    }
+    .logo-card {
+        border-radius: 1rem 1rem 0 0 !important;
+        border-right: none;
+        border-bottom: 1px solid #f0f0f0;
+        padding: 2rem 1rem 1rem 1rem;
+    }
+    .logo-img {
+        margin-top: 10%;
+        width: 150px;
+        height: 55px;
+    }
+    .card {
+        border-radius: 0 0 1rem 1rem;
+    }
+    .btn-custom-laranja {
+        width: 100%;
+        margin-top: 30px;
+        font-size: 15px;
+        padding: 8px 10px;
+    }
+    .frase-efeito {
+        font-size: 14px;
+    }
+}
+
+/* Responsividade para tablets */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .login-container {
+        max-width: 600px;
+        padding-top: 60px;
+    }
+    .logo-card {
+        padding: 2rem 1.2rem 1.2rem 1.2rem;
+        border-radius: 40px 0px 0px 40px ;
+    }
+    .logo-img {
+        width: 170px;
+        height: 60px;
+        margin-top: 20%;
+    }
+    .btn-custom-laranja {
+        width: 90%;
+        font-size: 15px;
+        margin-top: 40px;
+    }
+    .frase-efeito {
+        font-size: 15px;
+    }
+}
+
+/* Responsividade para telas grandes (desktops maiores) */
+@media (min-width: 1200px) {
+    .login-container {
+        max-width: 950px;
+        padding-top: 80px;
+    }
+    .logo-card {
+        padding: 3rem 2rem 2rem 2rem;
+        border-radius: 64px 0px 0px 64px;
+    }
+    .logo-img {
+        width: 240px;
+        height: 90px;
+        margin-top: 25%;
+    }
+    .btn-custom-laranja {
+        width: 70%;
+        font-size: 18px;
+        margin-top: 70px;
+    }
+    .frase-efeito {
+        font-size: 18px;
+    }
+}
+
+/* Responsividade para telas ultra grandes (acima de 3890px) */
+@media (min-width: 1900px) {
+    .login-container {
+        max-width: 950px;
+        padding-top: 246px;
+    }
+    .logo-card {
+        padding: 3rem 2rem 2rem 2rem;
+        border-radius: 64px 0px 0px 64px;
+    }
+    .logo-img {
+        width: 240px;
+        height: 90px;
+        margin-top: 25%;
+    }
+    .btn-custom-laranja {
+        width: 70%;
+        font-size: 18px;
+        margin-top: 70px;
+    }
+    .frase-efeito {
+        font-size: 18px;
+    }
+}
