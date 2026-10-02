@@ -54,7 +54,7 @@ services:
         condition: service_completed_successfully
     command: ["sh", "-ec", "exec php -d opcache.enable=0 -S 0.0.0.0:3000 .base44/router.php"]
     healthcheck:
-      test: ["CMD", "php", "-r", "$$r = @file_get_contents('http://127.0.0.1:3000/login.php', false, stream_context_create(['http' => ['timeout' => 3]])); if ($$r === false || strpos($$r, 'Sistema PDV') === false) { fwrite(STDERR, 'Login page unavailable'); exit(1); } require '/app/config/db.php'; $$pdo->query('SELECT 1 FROM usuarios LIMIT 1');"]
+      test: ["CMD", "php", "/app/.base44/healthcheck.php"]
       interval: 10s
       timeout: 5s
       retries: 3
