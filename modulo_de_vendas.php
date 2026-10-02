@@ -101,8 +101,11 @@ function getImagensPorSKU($sku) {
     
     // --- CONFIGURAÇÕES CORRIGIDAS ---
     // --- CONFIGURAÇÕES DE FTP ---
-    $ftp_host = 'ftp.example.com'; 
-    $ftp_user = 'user_ftp';
+    $ftp_host = getenv('FTP_HOST');
+    if (!$ftp_host || !getenv('FTP_USER') || !getenv('FTP_PASSWORD')) {
+        return []; // Optional image integration is not configured.
+    } 
+    $ftp_user = getenv('FTP_USER');
     $ftp_pass = 'password_ftp';
     $ftp_base_dir = 'images/' . $sku . '/';
     
