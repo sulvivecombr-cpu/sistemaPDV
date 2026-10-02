@@ -1,8 +1,8 @@
 <?php
-$host = 'localhost';
-$db   = 'pdv_system';
-$user = 'root'; // Usuário padrão do XAMPP
-$pass = '';     // Senha padrão do XAMPP
+$host = getenv('DB_HOST') ?: 'localhost';
+$db   = getenv('DB_NAME') ?: 'pdv_system';
+$user = getenv('DB_USER') ?: 'root';
+$pass = getenv('DB_PASSWORD') !== false ? getenv('DB_PASSWORD') : '';
 
 $options = [
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
@@ -16,7 +16,6 @@ try {
     throw new \PDOException($e->getMessage(), (int)$e->getCode());
 }
 
-// Inicia a sessão em todas as páginas que incluírem este arquivo
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }

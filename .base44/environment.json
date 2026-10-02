@@ -1,0 +1,13 @@
+{
+  "previewPort": 3000,
+  "healthPath": "/login.php",
+  "startCommand": "docker compose -f docker-compose.base44.yml up -d --build",
+  "secrets": [
+    {"name": "MP_ACCESS_TOKEN", "description": "Optional: Mercado Pago access token from its developer dashboard; only needed for live payments.", "requiredAtBoot": false},
+    {"name": "MP_DEVICE_ID", "description": "Optional: Mercado Pago Point device ID; only needed for terminal payments.", "requiredAtBoot": false},
+    {"name": "FTP_HOST", "description": "Optional: product-image FTP hostname from your hosting provider.", "requiredAtBoot": false},
+    {"name": "FTP_USER", "description": "Optional: product-image FTP username from your hosting provider.", "requiredAtBoot": false},
+    {"name": "FTP_PASSWORD", "description": "Optional: product-image FTP password from your hosting provider.", "requiredAtBoot": false},
+    {"name": "FTP_IMAGE_BASE_URL", "description": "Optional: public HTTPS base URL corresponding to the FTP product images.", "requiredAtBoot": false}
+  ]
+}
